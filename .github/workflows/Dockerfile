@@ -1,4 +1,4 @@
 FROM ubuntu
-COPY . /app
+COPY ../.. /app
 WORKDIR /app
 CMD sh runner.sh
