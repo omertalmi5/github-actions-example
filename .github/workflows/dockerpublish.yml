@@ -22,7 +22,7 @@ jobs:
 
 
       - name: Log into registry
-        run: echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u omertalmi --password-stdin
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u omertalmi --password-stdin
 
       - name: Push images
         run: |
