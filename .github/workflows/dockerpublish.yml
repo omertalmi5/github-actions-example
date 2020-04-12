@@ -1,0 +1,7 @@
+‐ name: build-push
+  uses: docker/build-push-action@v1
+  with:
+    username: ${{ DOCKER_USERNAME }}
+    password: ${{ DOCKER_PASSWORD }}
+    repository: omertalmi5/github-action
+    tags: v1
